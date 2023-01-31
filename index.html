@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/estilos.css">
     <title>Vinco</title>
 </head>
 
@@ -42,34 +42,70 @@
         </div>
     </nav>
 
-    <section class = "section_home">
-        <div>
-        <h1>VINCO generando soluciones financieras</h1>
+    <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/home_slide_uno.png" class="d-block w-100" alt="slide de presentacion">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/home_slide_dos.png" class="d-block w-100" alt="slide de riesgos">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/home_slide_tres.png" class="d-block w-100" alt="slide de portafolios">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </section>
+    </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-10 col-md-5 card riesgos-home">
-                <h2>RISK MANAGEMENT</h2>
-                <img src="img/proceso_risk.png" class="card-img-top pie-risk" alt="risk">
-                <div class="card-body">
-                    <h5 class="card-title">¿Porqué cubrirse?</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quod unde id modi hic, accusantium rerum tempora aliquid quasi?</p>
-                    <a href="./section/riesgos.html" class="btn btn-primary">Conoce más</a>
+    <div class="container-fluid home_servicios">
+        <h2>NUESTROS SERVICIOS</h2>
+            <div class="home_card home_risk">
+                <h3>RISK MANAGEMENT</h3>
+                <div>
+                    <h4>Retos financieros que buscamos ayudarle a superar</h4>
+                    <ul>
+                        <li>¿Qué porcentaje de mi utilidad neta-flujo de caja está en riesgo por variables financieras?</li>
+                        <li>¿Qué políticas tengo implementadas mara mitigar estos riesgos? 
+                        ¿La Junta Directiva está al tanto?</li>
+                        <li>¿Mi programa de cobertura aprovecha los beneficios bajo NIIF? Cuales son las implicaciones jurídicas?</li>
+                        <li>¿Cómo me cubro? ¿Qué atribuciones tiene el tesorero? ¿Cómo garantizo los mejores precios? ¿Cómo monitoreo el mercado?</li>
+                    </ul>
+                    <a href="./section/riesgos.html" class="btn">Conoce más</a>
                 </div>
             </div>
         
-            <div class="col-sm-10 col-md-5 card port-home">
-                <h2>GESTIÓN PATRIMONIAL</h2>
-                <img src="img/proceso_portafolio.png" class="card-img-top pie-risk" alt="portfolios">
-                <div class="card-body">
-                    <h5 class="card-title">Optimización de Portafolios</h5>
-                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quod unde id modi hic, accusantium rerum tempora aliquid quasi?</p>
-                    <a href="./section/portafolios.html" class="btn btn-primary">Conoce más</a>
+            <div class="home_card home_portafolios">
+                <h3>GESTIÓN DE PORTAFOLIOS</h3>
+                <div>
+                    <h4>Retos financieros que buscamos ayudarle a superar</h4>
+                    <ul>
+                        <li>¿Tengo una política de inversión que me ayude a protegerme del error humano?</li>
+                        <li>¿Mi portafolio se encuentra bien diversificado? ¿Los activos de mi portafolio tiene baja correlación?</li>
+                        <li>¿He cuantificado el riesgo de mi portafolio? ¿Conozco cuál es el VaR de mi portafolio?</li>
+                        <li>¿Estoy aprovechando las oportunidades del mercado?</li>
+                    </ul>
+                    <a href="./section/riesgos.html" class="btn">Conoce más</a>
                 </div>
             </div>
-        </div>
         
     </div>
 

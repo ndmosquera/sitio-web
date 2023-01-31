@@ -1,0 +1,13 @@
+.container-nosotros{
+    display: flex;
+    justify-content: center;
+    .video_nosotros{
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        width: 600px;
+        height: 400px; 
+        border: 10px solid #EEAC18;
+        border-radius: 30px;
+    }
+}
+

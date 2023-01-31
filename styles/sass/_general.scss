@@ -1,0 +1,129 @@
+/* Estilos Globales */
+
+@font-face {
+    font-family: "VanCondensed";
+    src: url(Van\ Condensed-Regular.otf);
+}
+@font-face {
+    font-family: "Franklin";
+    src: url(Franklin\ Gothic\ Book\ Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav{
+    background-color: #131722;
+    width: 100%;
+    li{
+    list-style-type: none;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    }
+        a{
+    font-family: "VanCondensed";
+    font-size:larger;
+    font-weight: bolder;
+        }
+    li:hover {
+        background-color: #EEAC18;
+        transition: .5s;
+    }
+}
+
+.logo-nav {
+    margin: .5rem;
+    width: max-content;
+    height: 45px;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: white;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Declarar areas Footer*/
+
+.mision{
+    grid-area: mision;
+}
+
+.vision{
+    grid-area: vision;
+}
+
+.valores{
+    grid-area: valores;
+}
+
+.proposito{
+    grid-area: proposito;
+}
+
+.derechos{
+    grid-area: derechos;
+}
+
+.footer{
+    display: grid;
+    background-color: #131722;
+    color: white;
+    grid-template-areas: 
+    "mision"
+    "vision"
+    "valores"
+    "proposito"
+    "derechos";
+    h2{
+        padding: .5em 1em;
+        font-family: "VanCondesed";
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    p{
+        padding: 0 1.5rem;
+        font-family: "Franklin";
+    }
+    ul{
+        padding: 0 3em;
+        font-family: "Franklin";
+        text-decoration: double;
+    }
+    h3{
+        margin: 1em;
+        text-align: center;
+        font-size: small;
+    }
+}
+
+@media (min-width: 768px){
+
+    .footer{
+        grid-template-areas: 
+        "mision  vision"
+        "valores proposito"
+        "derechos derechos";
+    }
+}
+
+@media (min-width: 992px){
+
+    .footer{
+        grid-template-areas: 
+        "mision  vision valores proposito"
+        "derechos derechos derechos derechos";
+    }
+}

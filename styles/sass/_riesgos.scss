@@ -1,0 +1,103 @@
+.grid-risk{
+    display: grid;
+    h2{
+        color: #5B6EA0;
+        margin: 1rem;
+        text-align: center;
+        font-family: "VanCondensed";
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+    h3{
+        color: #EEAC18;
+        margin: .5em;
+        font-family: "VanCondensed";
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    ul{
+        padding: 0 3em;
+        font-family: "Franklin";
+        text-decoration: double;
+    }
+    img{
+        padding: 0 1.5rem;
+    }
+}
+
+.giant-quotes-quote{
+    display: block;
+    font-family:"Franklin";
+    font-weight: bold;
+    margin:1em 3em;
+    max-width:20em;
+    blockquote > * {
+        padding: 0 2em;
+    }
+    blockquote {
+        display: inline-block;
+        margin: 0;
+        padding: 1em;
+        position: relative;
+        cite {
+            color: #c60;
+            display: block;
+            font-style: normal;
+            text-align: right;
+            text-transform: uppercase;
+            font-family: "VanCondensed";
+        }
+    }
+    blockquote:before {
+        color: #f90;
+        content: "“";
+        font-size: 4em;
+        left: 0;
+        line-height: 0.75em;
+        position: absolute;
+        top: 0;
+        transform: scale(2, 8);
+        transform-origin: top;
+    }
+    blockquote:after {
+        color: #f90;
+        content: "”";
+        font-size: 4em;
+        line-height: 0.75em;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: scale(2, 8);
+        transform-origin: top;
+    }
+}
+
+.track-record{
+    width: 95%;
+    margin: 1rem;
+    border: 2px solid #131722;
+    border-radius: 1rem;
+
+}
+
+.logo-clientes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    div{
+        border: 2px solid #131722;
+        text-align: center;
+        padding: 1em;
+    }
+}
+
+.logo-pequeno{ 
+    width: max-content;
+    height: 50px;
+}
+
+.logos{
+    padding-bottom: 2rem;
+}
