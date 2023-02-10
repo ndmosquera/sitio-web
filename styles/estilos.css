@@ -42,7 +42,6 @@ nav li:hover {
 
 .logo-nav {
   margin: 0.5rem;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 45px;
@@ -301,7 +300,6 @@ nav li:hover {
 }
 
 .logo-pequeno {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 50px;
@@ -322,6 +320,34 @@ nav li:hover {
   height: 400px;
   border: 10px solid #EEAC18;
   border-radius: 30px;
+}
+
+.equipo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  justify-content: space-around;
+}
+.equipo .miembro {
+  width: 300px;
+  margin-top: 10px;
+}
+.equipo .foto-equipo {
+  max-width: 300px;
+  height: 300px;
+}
+.equipo h3 {
+  color: black;
+  margin: 0 1.5rem;
+  font-family: "VanCondensed";
+  font-style: italic;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.equipo p {
+  padding: 0 3rem 0 1rem;
+  text-align: initial;
+  font-family: "Franklin";
 }
 
 input[type=text], select, textarea {
